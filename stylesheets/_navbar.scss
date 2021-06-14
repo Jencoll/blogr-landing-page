@@ -141,6 +141,7 @@ header {
     }
 }
 
+// hover states so that the mobile version is not affected
 @media (hover: hover) {
     header {
         nav .menu {
@@ -185,6 +186,7 @@ header {
     }
 }
 
+// mobile version
 @media screen and (max-width: 900px) {
     header {
         height: 90vh;
@@ -238,6 +240,17 @@ header {
                     }
                 }
 
+                .login {
+                    margin-bottom: 20px;
+                }
+
+                .connect {
+                    @include btn;
+                    background: $intro-gradient;
+                    color: $white;
+                    margin: 0 auto;
+                }
+
                 .mobile-hr {
                     display: block;
                     width: 90%;
@@ -260,7 +273,7 @@ header {
             .active-menu {
                 display: flex;
                 flex-direction: column;
-                top: 80px;
+                top: 60px;
                 width: 320px;
                 position: absolute;
                 left: 50%;
@@ -268,9 +281,10 @@ header {
                 background: $white;
                 color: $very-dark-blue;
                 height: auto;
-                padding: 20px 0;
+                padding: 40px 0 60px;
                 border-radius: 5px;
                 z-index: 300;
+                box-shadow: 10px 20px 30px rgb(0 0 0 / 30%);
             }
 
             .burger {
@@ -313,6 +327,20 @@ header {
             .burger.active .line:nth-child(3) {
                 top: 20px;
                 transform: rotate(-135deg);
+            }
+        }
+    }
+
+    .hero-txt-container {
+        .buttons {
+            display: flex;
+
+            .btn.red-txt.active-btn {
+                @include btn-hover-light-red;
+            }
+
+            .btn.white-txt.active-btn {
+                @include btn-red-txt;
             }
         }
     }

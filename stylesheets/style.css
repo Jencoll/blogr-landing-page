@@ -230,6 +230,24 @@ header .hero-txt-container .buttons .btn.white-txt {
   header nav .menu .menu-items .submenu a {
     font-size: 18px;
   }
+  header nav .menu .login {
+    margin-bottom: 20px;
+  }
+  header nav .menu .connect {
+    width: 140px;
+    padding: 0.8rem;
+    border-radius: 999px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Ubuntu";
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(to left, #FF3D54, #FF8F70);
+    color: white;
+    margin: 0 auto;
+  }
   header nav .menu .mobile-hr {
     display: block;
     width: 90%;
@@ -248,7 +266,7 @@ header .hero-txt-container .buttons .btn.white-txt {
   header nav .active-menu {
     display: flex;
     flex-direction: column;
-    top: 80px;
+    top: 60px;
     width: 320px;
     position: absolute;
     left: 50%;
@@ -256,9 +274,10 @@ header .hero-txt-container .buttons .btn.white-txt {
     background: white;
     color: #1f3f5b;
     height: auto;
-    padding: 20px 0;
+    padding: 40px 0 60px;
     border-radius: 5px;
     z-index: 300;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
   }
   header nav .burger {
     display: block;
@@ -297,6 +316,18 @@ header .hero-txt-container .buttons .btn.white-txt {
   header nav .burger.active .line:nth-child(3) {
     top: 20px;
     transform: rotate(-135deg);
+  }
+
+  .hero-txt-container .buttons {
+    display: flex;
+  }
+  .hero-txt-container .buttons .btn.red-txt.active-btn {
+    color: white;
+    background: #ff7a85;
+  }
+  .hero-txt-container .buttons .btn.white-txt.active-btn {
+    color: #ff525d;
+    background-color: white;
   }
 }
 main {
