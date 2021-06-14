@@ -1,0 +1,306 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  position: relative;
+  background: url(/images/bg-pattern-intro.svg) no-repeat 14% 52%/189%, linear-gradient(to left, #FF3D54, #FF8F70);
+  height: 50vh;
+  border-radius: 0 0 0 5rem;
+  padding: 0 2rem;
+}
+header nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  top: 3rem;
+  padding: 0 3rem;
+  color: white;
+}
+header nav .logo {
+  margin-right: 2rem;
+  align-self: center;
+}
+header nav .menu {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+  line-height: 50px;
+  width: 100%;
+}
+header nav .menu .menu-items {
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 120px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+header nav .menu .menu-items span {
+  margin-right: 5px;
+}
+header nav .menu .menu-items .chevron-mobile {
+  display: none;
+}
+header nav .menu .menu-items .chevron-desktop {
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-2px);
+}
+header nav .menu .menu-items a {
+  text-decoration: none;
+  display: block;
+  transition: all 0.25s;
+  color: #1f3f5b;
+}
+header nav .menu .menu-items .submenu {
+  position: relative;
+  background-color: white;
+  border-radius: 5px 5px 20px 5px;
+  padding: 10px 20px;
+  line-height: 50px;
+  min-width: 200px;
+  left: -20px;
+  z-index: 100;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.24);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transform: translateX(-30px);
+  opacity: 0;
+}
+header nav .menu .login {
+  text-align: center;
+}
+header nav .menu .connect {
+  width: 140px;
+  padding: 0.8rem;
+  border-radius: 999px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Ubuntu";
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ff525d;
+  background-color: white;
+  position: relative;
+}
+header nav .menu .connect span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header nav .menu hr {
+  display: none;
+}
+header nav .menu .login {
+  margin-left: auto;
+}
+header nav .menu .burger {
+  display: none;
+}
+header .hero-txt-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  color: white;
+}
+header .hero-txt-container h1 {
+  font-family: "Overpass";
+  font-size: 3rem;
+  text-align: center;
+}
+header .hero-txt-container p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 18px;
+}
+header .hero-txt-container .buttons {
+  text-align: center;
+  padding-top: 2rem;
+}
+header .hero-txt-container .buttons .btn {
+  width: 140px;
+  padding: 0.8rem;
+  border-radius: 999px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Ubuntu";
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header .hero-txt-container .buttons .btn.red-txt {
+  color: #ff525d;
+  background-color: white;
+  margin-right: 1rem;
+}
+header .hero-txt-container .buttons .btn.white-txt {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
+
+@media (hover: hover) {
+  header nav .menu .menu-items .submenu a:hover {
+    font-weight: bold;
+  }
+  header nav .menu .menu-items:hover {
+    overflow: visible;
+  }
+  header nav .menu .menu-items:hover > img {
+    transform: rotate(180deg);
+  }
+  header nav .menu .menu-items:hover > .submenu {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  header nav .menu .login:hover {
+    font-weight: bold;
+  }
+  header nav .menu .connect:hover {
+    color: white;
+    background: #ff7a85;
+  }
+  header .hero-txt-container .buttons .btn.red-txt:hover {
+    color: white;
+    background: #ff7a85;
+  }
+  header .hero-txt-container .buttons .btn.white-txt:hover {
+    color: #ff525d;
+    background-color: white;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    height: 90vh;
+  }
+  header nav {
+    padding: 0;
+  }
+  header nav .menu {
+    display: none;
+  }
+  header nav .menu .menu-items {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  header nav .menu .menu-items .chevron-desktop {
+    display: none;
+  }
+  header nav .menu .menu-items .chevron-mobile {
+    display: inline;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-2px);
+  }
+  header nav .menu .menu-items .active-chevron {
+    transform: rotate(180deg);
+  }
+  header nav .menu .menu-items span {
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  header nav .menu .menu-items .submenu {
+    background-color: #f2f2f2;
+    width: 90%;
+    position: relative;
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: transform 0.25s ease;
+    transform: translateY(-3px);
+  }
+  header nav .menu .menu-items .submenu a {
+    font-size: 18px;
+  }
+  header nav .menu .mobile-hr {
+    display: block;
+    width: 90%;
+    margin: 30px auto 30px;
+    border: 0.25px solid #f2f2f2;
+    border-radius: 5px;
+  }
+  header nav .menu .active-mobile {
+    height: fit-content;
+  }
+  header nav .menu .active-mobile > .submenu {
+    overflow: visible;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  header nav .active-menu {
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    width: 320px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background: white;
+    color: #1f3f5b;
+    height: auto;
+    padding: 20px 0;
+    border-radius: 5px;
+    z-index: 300;
+  }
+  header nav .burger {
+    display: block;
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  header nav .burger .line {
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: white;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+  }
+  header nav .burger .line:nth-child(1) {
+    top: 10px;
+  }
+  header nav .burger .line:nth-child(2) {
+    top: 20px;
+  }
+  header nav .burger .line:nth-child(3) {
+    top: 30px;
+  }
+  header nav .burger.active .line:nth-child(1) {
+    top: 20px;
+    transform: rotate(135deg);
+  }
+  header nav .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  header nav .burger.active .line:nth-child(3) {
+    top: 20px;
+    transform: rotate(-135deg);
+  }
+}
+main {
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */

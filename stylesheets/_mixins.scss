@@ -1,0 +1,27 @@
+@mixin btn {
+    width: 140px;
+    padding: 0.8rem;
+    border-radius: 999px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: $Ubuntu;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@mixin btn-red-txt {
+    color: $light-red;
+    background-color: $white;
+}
+
+@mixin btn-white-txt {
+    color: $white;
+    background: transparent;
+}
+
+@mixin btn-hover-light-red {
+        color: $white;
+        background: $very-light-red;
+}
