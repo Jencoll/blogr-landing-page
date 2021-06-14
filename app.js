@@ -11,6 +11,7 @@ btnBurger.addEventListener('click', () => {
     menu.classList.toggle('active-menu');
 })
 
+// buttons effects
 btnSignup.addEventListener('touchstart', () => {
     btnSignup.style.transform = "scale(0.9)";
     btnSignup.style.transition = "transform 0.25s ease";
@@ -27,6 +28,7 @@ btnWhiteTxt.addEventListener('click', () => {
     btnWhiteTxt.classList.toggle('active-btn');
 })
 
+// mobile menu
 allItems.forEach(item => {
 
     item.addEventListener('click', () => {

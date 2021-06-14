@@ -187,6 +187,7 @@ header .hero-txt-container .buttons .btn.white-txt {
 @media screen and (max-width: 900px) {
   header {
     height: 90vh;
+    background: url(/images/bg-pattern-intro.svg) no-repeat 30% 40%/400%, linear-gradient(to left, #FF3D54, #FF8F70);
   }
   header nav {
     padding: 0;
@@ -332,6 +333,67 @@ header .hero-txt-container .buttons .btn.white-txt {
 }
 main {
   position: relative;
+}
+
+.presentation {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.presentation h2 {
+  font-size: 30px;
+  color: #1f3f5b;
+  text-align: center;
+  padding: 7rem 0 5rem;
+  font-family: "Overpass";
+}
+.presentation .content-module {
+  padding: 0 0 0 7rem;
+  display: flex;
+  margin: auto;
+}
+.presentation .content-module .txt-box {
+  width: 45%;
+  line-height: 1.5;
+  padding-top: 8rem;
+}
+.presentation .content-module .txt-box .txt-bloc h3 {
+  color: #1f3f5b;
+  padding-bottom: 2rem;
+  font-family: "Overpass";
+  font-size: 20px;
+}
+.presentation .content-module .txt-box .first {
+  padding-bottom: 4rem;
+}
+.presentation .content-module .txt-box p {
+  color: #4b5862;
+  font-family: "Ubuntu";
+}
+.presentation .content-module .desktop-figure {
+  width: 45%;
+  height: 100%;
+}
+.presentation .content-module .desktop-figure img {
+  width: 60vw;
+  transform: translateY(-20vh);
+}
+.presentation .content-module .mobile-figure {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+  }
+  .presentation .content-module figure .img-desktop {
+    display: none;
+  }
+  .presentation .content-module figure .img-mobile {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

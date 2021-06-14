@@ -1,0 +1,73 @@
+// hiérarchie : .presentation > h2 = .content-module > .txt-box > .txt-bloc > h3 et p
+
+.presentation {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        @include h2;
+    }
+
+    .content-module {
+        padding: 0 0 0 7rem;
+        display: flex;
+        margin: auto;
+
+        .txt-box {
+            width: 45%;
+            line-height: 1.5;
+            padding-top: 8rem;
+
+            .txt-bloc {
+
+                h3 {
+                    @include h3;
+                }
+            }
+            .first {
+                padding-bottom: 4rem;
+            }
+
+            p {
+                color: $very-dark-gray-blue;
+                font-family: $Ubuntu;
+            }
+        }
+
+        .desktop-figure {
+            width: 45%;
+            height: 100%;
+
+            img {
+                width: 60vw;
+                transform: translateY(-20vh);
+            }
+        }
+
+        .mobile-figure {
+            display: none;
+        }
+    }
+}
+
+// mobile version
+@media screen and (max-width: 900px) {
+    .presentation {
+        display: flex;
+        flex-direction: column;
+
+        .content-module {
+            figure {
+                .img-desktop {
+                    display: none;
+                }
+
+                .img-mobile {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
