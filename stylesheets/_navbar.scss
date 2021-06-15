@@ -233,7 +233,7 @@ header {
                         margin: 0 auto;
                         border-radius: 5px;
                         box-shadow: none;
-                        transition: transform 0.25s ease;
+                        transition: all 0.3s ease;
                         transform: translateY(-3px);
 
                         a {
@@ -263,6 +263,7 @@ header {
 
                 .active-mobile {
                     height: fit-content;
+                    // transition: all 0.3s ease;
                 }
 
                 .active-mobile > .submenu {
@@ -291,9 +292,8 @@ header {
 
             .burger {
                 display: block;
-                position: fixed;
-                top: 3rem;
-                right: 2rem;
+                position: relative;
+                margin-left: auto;
                 width: 40px;
                 height: 40px;
                 cursor: pointer;

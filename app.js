@@ -1,7 +1,7 @@
 const btnBurger = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 const allItems = document.querySelectorAll('.list');
-const chevron = document.querySelector('.chevron-mobile');
+const chevron = document.querySelectorAll('.chevron-mobile');
 const btnSignup = document.querySelector('.connect');
 const btnRedTxt = document.querySelector('.red-txt');
 const btnWhiteTxt = document.querySelector('.white-txt')
@@ -31,18 +31,24 @@ btnWhiteTxt.addEventListener('click', () => {
 // mobile menu
 allItems.forEach(item => {
 
+    // cibler le span
+    // item.addEventListener('mouseenter', () => {
+    //     item.style.textDecoration = "underline";
+    // })
+
     item.addEventListener('click', () => {
 
         item.classList.toggle('active-mobile');
 
-        // ajouter un if pour activer un seul <li> à la fois
+        allItems.forEach(item2 => {
+            if (item2 !== item) {
+                item2.classList.remove('active-mobile');
+            }
+        })
 
-
-        // boucle for qui ne fonctionne pas
         for (i = 0; i < chevron.length; i++) {
-
           if (chevron[i].getAttribute('data-anim') === item.getAttribute('data-anim')) {
-            chevron[i].classList.toggle(('active-chevron'));
+            chevron[i].classList.toggle('active-chevron');
           }
         }
     })

@@ -225,7 +225,7 @@ header .hero-txt-container .buttons .btn.white-txt {
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: none;
-    transition: transform 0.25s ease;
+    transition: all 0.3s ease;
     transform: translateY(-3px);
   }
   header nav .menu .menu-items .submenu a {
@@ -282,9 +282,8 @@ header .hero-txt-container .buttons .btn.white-txt {
   }
   header nav .burger {
     display: block;
-    position: fixed;
-    top: 3rem;
-    right: 2rem;
+    position: relative;
+    margin-left: auto;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -337,9 +336,10 @@ main {
 
 .presentation {
   width: 100%;
-  height: 80vh;
+  height: 750px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 250px;
 }
 .presentation h2 {
   font-size: 30px;
@@ -356,7 +356,7 @@ main {
 .presentation .content-module .txt-box {
   width: 45%;
   line-height: 1.5;
-  padding-top: 8rem;
+  padding-top: 2rem;
 }
 .presentation .content-module .txt-box .txt-bloc h3 {
   color: #1f3f5b;
@@ -378,21 +378,105 @@ main {
 .presentation .content-module .desktop-figure img {
   width: 60vw;
   transform: translateY(-20vh);
+  max-width: 900px;
 }
 .presentation .content-module .mobile-figure {
   display: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .presentation .content-module .desktop-figure img {
+    transform: translateY(-10vh);
+  }
+}
 @media screen and (max-width: 900px) {
   .presentation {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin-bottom: 150px;
   }
-  .presentation .content-module figure .img-desktop {
+  .presentation h2 {
+    word-break: break-word;
+  }
+  .presentation .content-module {
+    margin: 0 2rem;
+    padding: 0 5rem;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+  }
+  .presentation .content-module .txt-box {
+    width: 100%;
+  }
+  .presentation .content-module .desktop-figure {
     display: none;
   }
-  .presentation .content-module figure .img-mobile {
+  .presentation .content-module .mobile-figure {
     display: flex;
+    width: 100%;
+  }
+  .presentation .content-module .mobile-figure .img-mobile {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .presentation h2 {
+    font-size: 26px;
+    margin: 0 1rem;
+  }
+  .presentation .content-module {
+    padding: 0 1rem;
+    margin: 0 1rem;
+  }
+}
+.banner {
+  background: url(/images/bg-pattern-circles.svg) no-repeat -120% 85%/85%, linear-gradient(to right, #2c2d3f, #3f4164);
+  border-radius: 0 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+}
+.banner .banner-img-box {
+  padding-left: 5rem;
+}
+.banner .banner-img-box img {
+  width: 100%;
+}
+.banner .banner-txt {
+  width: 40%;
+  color: white;
+  line-height: 1.5;
+}
+.banner .banner-txt h2 {
+  font-size: 2.3rem;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    height: 100%;
+    background: url(/images/bg-pattern-circles.svg) no-repeat 45% 134%/150%, linear-gradient(to right, #2c2d3f, #3f4164);
+    text-align: center;
+  }
+  .banner .banner-img-box {
+    padding: 0;
+    margin: 0 auto;
+    transform: translateY(-10vh);
+  }
+  .banner .banner-txt {
+    margin-top: -75px;
+    width: 500px;
+    padding: 0 2rem 5rem 2.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .banner {
+    background: url(/images/bg-pattern-circles.svg) no-repeat 52% 100%/250%, linear-gradient(to right, #2c2d3f, #3f4164);
+  }
+  .banner .banner-txt {
+    width: 320px;
   }
 }
 

@@ -1,0 +1,62 @@
+.banner {
+    background: url(/images/bg-pattern-circles.svg) no-repeat -120% 85% / 85%, $banner-gradient;
+    border-radius: 0 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+
+    .banner-img-box {
+        // width: 50%;
+        padding-left: 5rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .banner-txt {
+        width: 40%;
+        color: $white;
+        line-height: 1.5;
+
+        h2 {
+            font-size: 2.3rem;
+            padding: 1rem 0;
+        }
+    }
+}
+
+
+// mobile version
+@media screen and (max-width: 900px) {
+    .banner {
+        flex-direction: column;
+        height: 100%;
+        background: url(/images/bg-pattern-circles.svg) no-repeat 45% 134%/150%,
+        linear-gradient(to right, #2c2d3f, #3f4164);
+        text-align: center;
+
+        .banner-img-box {
+            padding: 0;
+            margin: 0 auto;
+            transform: translateY(-10vh);
+        }
+
+        .banner-txt {
+            margin-top: -75px;
+            width: 500px;
+            padding: 0 2rem 5rem 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .banner {
+        background: url(/images/bg-pattern-circles.svg) no-repeat 52% 100% / 250%, linear-gradient(to right, #2c2d3f, #3f4164);
+
+        .banner-txt {
+            width: 320px;
+        }
+    }
+}
