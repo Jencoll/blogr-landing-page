@@ -14,7 +14,7 @@ body {
 
 header {
   position: relative;
-  background: url(/images/bg-pattern-intro.svg) no-repeat 14% 52%/189%, linear-gradient(to left, #FF3D54, #FF8F70);
+  background: url(images/bg-pattern-intro.svg) no-repeat 14% 52%/189%, linear-gradient(to left, #FF3D54, #FF8F70);
   height: 50vh;
   border-radius: 0 0 0 5rem;
   padding: 0 2rem;
@@ -187,7 +187,7 @@ header .hero-txt-container .buttons .btn.white-txt {
 @media screen and (max-width: 900px) {
   header {
     height: 90vh;
-    background: url(/images/bg-pattern-intro.svg) no-repeat 30% 40%/400%, linear-gradient(to left, #FF3D54, #FF8F70);
+    background: url(images/bg-pattern-intro.svg) no-repeat 30% 40%/400%, linear-gradient(to left, #FF3D54, #FF8F70);
   }
   header nav {
     padding: 0;
@@ -433,7 +433,7 @@ main {
   }
 }
 .banner {
-  background: url(/images/bg-pattern-circles.svg) no-repeat -120% 85%/85%, linear-gradient(to right, #2c2d3f, #3f4164);
+  background: url(images/bg-pattern-circles.svg) no-repeat -120% 85%/85%, linear-gradient(to right, #2c2d3f, #3f4164);
   border-radius: 0 5rem;
   display: flex;
   justify-content: space-evenly;
@@ -460,7 +460,7 @@ main {
   .banner {
     flex-direction: column;
     height: 100%;
-    background: url(/images/bg-pattern-circles.svg) no-repeat 45% 134%/150%, linear-gradient(to right, #2c2d3f, #3f4164);
+    background: url(images/bg-pattern-circles.svg) no-repeat 45% 134%/150%, linear-gradient(to right, #2c2d3f, #3f4164);
     text-align: center;
   }
   .banner .banner-img-box {
@@ -476,7 +476,7 @@ main {
 }
 @media screen and (max-width: 750px) {
   .banner {
-    background: url(/images/bg-pattern-circles.svg) no-repeat 52% 100%/250%, linear-gradient(to right, #2c2d3f, #3f4164);
+    background: url(images/bg-pattern-circles.svg) no-repeat 52% 100%/250%, linear-gradient(to right, #2c2d3f, #3f4164);
   }
   .banner .banner-txt {
     width: 320px;
