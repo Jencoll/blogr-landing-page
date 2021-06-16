@@ -38,10 +38,11 @@
         .desktop-figure {
             width: 45%;
             height: 100%;
+            transform: translate(10vw, -20vh);
 
             img {
                 width: 60vw;
-                transform: translate(10vw, -20vh);
+                // transform: translate(10vw, -20vh);
                 max-width: 900px;
             }
         }

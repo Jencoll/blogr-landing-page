@@ -374,10 +374,10 @@ main {
 .presentation .content-module .desktop-figure {
   width: 45%;
   height: 100%;
+  transform: translate(10vw, -20vh);
 }
 .presentation .content-module .desktop-figure img {
   width: 60vw;
-  transform: translate(10vw, -20vh);
   max-width: 900px;
 }
 .presentation .content-module .mobile-figure {
@@ -487,11 +487,21 @@ main {
 }
 .benefits {
   margin-top: 14rem;
+  margin-bottom: 0;
 }
 .benefits .benefits-module {
   flex-wrap: wrap;
+  padding: 0;
 }
-.benefits .benefits-module .desktop-figure .img-desktop {
+.benefits .benefits-module .txt-box {
+  height: fit-content;
+  padding-left: 4rem;
+}
+.benefits .benefits-module .benefits-figure {
+  transform: translate(0);
+  height: 600px;
+}
+.benefits .benefits-module .benefits-figure .img-desktop {
   transform: translate(-15vw, -20vh);
 }
 
@@ -507,14 +517,83 @@ main {
   .benefits {
     margin-top: 5rem;
   }
-  .benefits .content-module {
+  .benefits .benefits-module {
     padding: 0;
     margin: 0 auto;
   }
-  .benefits .content-module .txt-box {
-    padding: 0 2rem;
+  .benefits .benefits-module .txt-box {
+    padding: 0;
     max-width: 500px;
   }
+}
+footer {
+  width: 100%;
+  background-color: #25252d;
+  height: 300px;
+  border-radius: 0 5rem 0 0;
+  color: white;
+  padding: 0 2rem;
+}
+footer .footer-nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0 3rem;
+  top: 3rem;
+}
+footer .footer-nav .footer-menu {
+  display: flex;
+  list-style-type: none;
+  font-family: "Overpass";
+  width: 100%;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+footer .footer-nav .footer-menu .footer-menu-items {
+  line-height: 2;
+}
+footer .footer-nav .footer-menu .footer-menu-items .items-txt {
+  font-weight: bold;
+}
+footer .footer-nav .footer-menu .footer-menu-items .footer-submenu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+footer .footer-nav .footer-menu .footer-menu-items .footer-submenu .footer-submenu-items {
+  text-decoration: none;
+  color: #c8c8cb;
+  font-size: 14px;
+  list-style-type: none;
+}
+footer .footer-nav .footer-menu .footer-menu-items .footer-submenu .footer-submenu-items:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 750px;
+  }
+  footer .footer-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer-nav .footer-menu {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  footer .footer-nav .footer-menu .footer-menu-items {
+    padding-bottom: 2rem;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Overpass";
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 
 /*# sourceMappingURL=style.css.map */
