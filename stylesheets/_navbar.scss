@@ -1,6 +1,6 @@
 header {
     position: relative;
-    background: url(/images/bg-pattern-intro.svg) no-repeat 14% 52% / 189%, $intro-gradient;
+    background: url(../images/bg-pattern-intro.svg) no-repeat 14% 52% / 189%, $intro-gradient;
     height: 50vh;
     border-radius: 0 0 0 5rem;
     padding: 0 2rem;
@@ -190,7 +190,7 @@ header {
 @media screen and (max-width: 900px) {
     header {
         height: 90vh;
-        background: url(/images/bg-pattern-intro.svg) no-repeat 30% 40% / 400%,
+        background: url(../images/bg-pattern-intro.svg) no-repeat 30% 40% / 400%,
         $intro-gradient;
 
         nav {

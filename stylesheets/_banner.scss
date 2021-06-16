@@ -1,5 +1,5 @@
 .banner {
-    background: url(/images/bg-pattern-circles.svg) no-repeat -120% 85% / 85%, $banner-gradient;
+    background: url(../images/bg-pattern-circles.svg) no-repeat -120% 85% / 85%, $banner-gradient;
     border-radius: 0 5rem;
     display: flex;
     justify-content: space-evenly;
@@ -33,7 +33,7 @@
     .banner {
         flex-direction: column;
         height: 100%;
-        background: url(/images/bg-pattern-circles.svg) no-repeat 45% 134%/150%,
+        background: url(../images/bg-pattern-circles.svg) no-repeat 45% 134%/150%,
         linear-gradient(to right, #2c2d3f, #3f4164);
         text-align: center;
 
@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 750px) {
     .banner {
-        background: url(/images/bg-pattern-circles.svg) no-repeat 52% 100% / 250%, linear-gradient(to right, #2c2d3f, #3f4164);
+        background: url(../images/bg-pattern-circles.svg) no-repeat 52% 100% / 250%, linear-gradient(to right, #2c2d3f, #3f4164);
 
         .banner-txt {
             width: 320px;
