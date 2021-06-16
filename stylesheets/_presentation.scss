@@ -41,7 +41,7 @@
 
             img {
                 width: 60vw;
-                transform: translateY(-20vh);
+                transform: translate(10vw, -20vh);
                 max-width: 900px;
             }
         }
@@ -62,7 +62,7 @@
     .presentation {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: auto;
         margin-bottom: 150px;
 
         h2 {
@@ -77,6 +77,7 @@
 
             .txt-box {
                 width: 100%;
+                margin: 0 auto 7rem auto;
             }
 
             .desktop-figure {
@@ -85,7 +86,8 @@
 
             .mobile-figure {
                 display: flex;
-                width: 100%;
+                width: 80%;
+                margin: 0 auto;
 
                 .img-mobile {
                     width: 100%;
@@ -101,6 +103,7 @@
         h2 {
             font-size: 26px;
             margin: 0 1rem;
+            padding: 7rem 0 3rem;
         }
 
         .content-module {

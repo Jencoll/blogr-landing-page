@@ -1,0 +1,44 @@
+.benefits {
+    margin-top: 14rem;
+
+    .benefits-module {
+        flex-wrap: wrap;
+
+        .desktop-figure {
+
+            .img-desktop {
+                transform: translate(-15vw, -20vh);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .benefits {
+        margin-top: 0;
+
+        .benefits-module {
+            .desktop-figure {
+                .img-desktop {
+                    transform: translate(-20vw, 0vh);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .benefits {
+        margin-top: 5rem;
+
+        .content-module {
+            padding: 0;
+            margin: 0 auto;
+
+            .txt-box {
+                padding: 0 2rem;
+                max-width: 500px;
+            }
+        }
+    }
+}

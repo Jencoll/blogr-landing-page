@@ -40,13 +40,13 @@
         .banner-img-box {
             padding: 0;
             margin: 0 auto;
-            transform: translateY(-10vh);
+            transform: translateY(-20vh);
         }
 
         .banner-txt {
             margin-top: -75px;
             width: 500px;
-            padding: 0 2rem 5rem 2.5rem;
+            transform: translateY(-10vh);
         }
     }
 }
@@ -57,6 +57,12 @@
 
         .banner-txt {
             width: 320px;
+        }
+
+        .banner-img-box {
+            .banner-img {
+                max-width: 500px;
+            }
         }
     }
 }
