@@ -34,3 +34,16 @@ main {
 
 // second presentation section
 @import 'second-presentation.scss';
+
+// footer
+@import '_footer.scss';
+
+   .attribution {
+        font-size: 11px;
+        text-align: center;
+        font-family: $Overpass;
+    }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
