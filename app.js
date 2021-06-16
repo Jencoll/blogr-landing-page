@@ -31,11 +31,6 @@ btnWhiteTxt.addEventListener('click', () => {
 // mobile menu
 allItems.forEach(item => {
 
-    // cibler le span
-    // item.addEventListener('mouseenter', () => {
-    //     item.style.textDecoration = "underline";
-    // })
-
     item.addEventListener('click', () => {
 
         item.classList.toggle('active-mobile');
