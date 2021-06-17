@@ -318,6 +318,9 @@ header .hero-txt-container .buttons .btn.white-txt {
     transform: rotate(-135deg);
   }
 
+  .hero-txt-container h1 {
+    font-size: 2.5rem;
+  }
   .hero-txt-container .buttons {
     display: flex;
   }
